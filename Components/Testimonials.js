@@ -8,9 +8,16 @@ const Testimonials = () => {
   return (
     <div>
         <div className=' flex justify-center items-center'>
-            <h2 className=' text-xl mb-44 font-medium'>
-            2000+ Happy users
-            </h2>
+            <div className=' text-xl mb-44 font-medium flex items-start'>
+                <h2 className='waivy'>
+                <span style={{'--i':1}}>2</span>
+                <span style={{'--i':2}}>0</span>
+                <span style={{'--i':3}}>0</span>
+                <span style={{'--i':4}}>0</span>
+                <span style={{'--i':5}}>+</span>
+                </h2> 
+                Happy users
+            </div>
         </div>
 
         <div className=' flex w-full justify-center items-center mb-60 gap-11'>
