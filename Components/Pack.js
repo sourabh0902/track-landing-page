@@ -1,8 +1,12 @@
-import React from 'react'
-import { Divider } from 'antd';
+import React, { useState } from 'react'
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 
 
 const Pack = () => {
+
+const [counterOn, setCounterOn] = useState(false);
+
   return (
     <div>
         <div>
@@ -14,6 +18,8 @@ const Pack = () => {
                 </div>
 
                 <div className=' flex gap-20'>
+
+                <ScrollTrigger onEnter={ () => setCounterOn(true)} onExit={ () => setCounterOn(false)}>
                 <div className=' bg-[#485AFF] px-16 py-12 justify-center items-center flex flex-col rounded-xl text-white'>
                     <h2 className=' text-xl font-bold mb-[3px]'>
                         Premium Pack
@@ -22,8 +28,9 @@ const Pack = () => {
                         Small teams
                     </p>
                     <div className=' flex justify-end items-end mb-12'>
+                    <h1 className=' text-5xl font-bold animCounter'> $ </h1>
                     <h1 className=' text-5xl font-bold animCounter'>
-                        $20
+                        {counterOn && <CountUp start={0} end={20} duration={2} delay={0} />}
                     </h1>
                     <p>
                         /Month
@@ -47,7 +54,9 @@ const Pack = () => {
                         </button>
                     </div>
                 </div>
+                </ScrollTrigger>
 
+                <ScrollTrigger onEnter={ () => setCounterOn(true)} onExit={ () => setCounterOn(false)}>
                 <div className=' bg-white border px-16 py-12 justify-center items-center flex flex-col rounded-xl text-[#0F172A]'>
                     <h2 className=' text-xl font-bold mb-[3px]'>
                         Free Pack
@@ -56,8 +65,9 @@ const Pack = () => {
                         Customer Reach and Bugdet
                     </p>
                     <div className=' flex justify-end items-end mb-12'>
+                    <h1 className=' text-5xl font-bold animCounter'> $ </h1>
                     <h1 className=' text-5xl font-bold'>
-                        $0
+                        {counterOn && <CountUp start={20} end={0} duration={2} delay={0} />}
                     </h1>
                     <p>
                         /Month
@@ -81,6 +91,7 @@ const Pack = () => {
                         </button>
                     </div>
                 </div>
+                </ScrollTrigger>
                 </div>
 
             </div>

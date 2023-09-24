@@ -7,7 +7,6 @@ import Testimonials from '@/Components/Testimonials'
 import Pack from '@/Components/Pack'
 import Slider from '@/Components/Slider'
 
-
 const page = () => {
   return (    
     <div>

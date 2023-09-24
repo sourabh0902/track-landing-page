@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,body { 
@@ -13,26 +14,53 @@ html,body {
   height: 100%;
 }
 
+/* Navbar Elements */
+.track {
+  -webkit-animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) both;animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) both
+}
+@-webkit-keyframes track{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+.features {
+  -webkit-animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) .2s both;animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) .2s both
+}
+@-webkit-keyframes features{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+.team {
+  -webkit-animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) .3s both;animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) .3s both
+}
+@-webkit-keyframes team{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+.pricing {
+  -webkit-animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) .4s both;animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) .4s both
+}
+@-webkit-keyframes pricing{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+.buttons {
+  -webkit-animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) .6s both;animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) .6s both
+}
+@-webkit-keyframes buttons{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+
 /* Hero Elements */
 
 .hero-title {
-  -webkit-animation:tracking-in-contract-bck-top .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-contract-bck-top .8s cubic-bezier(.215,.61,.355,1.000) both
+  -webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .2s both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .2s both
 }
-@-webkit-keyframes hero-title{0%{letter-spacing:1em;-webkit-transform:translateZ(400px) translateY(-300px);transform:translateZ(400px) translateY(-300px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0) translateY(0);transform:translateZ(0) translateY(0);opacity:1}}@keyframes tracking-in-contract-bck-top{0%{letter-spacing:1em;-webkit-transform:translateZ(400px) translateY(-300px);transform:translateZ(400px) translateY(-300px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0) translateY(0);transform:translateZ(0) translateY(0);opacity:1}}
+@-webkit-keyframes hero-title{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 
 .hero-subtitle {
-  -webkit-animation:tracking-in-contract-bck-top .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-contract-bck-top .8s cubic-bezier(.215,.61,.355,1.000) both
+  -webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .4s both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .4s both
 }
-@-webkit-keyframes hero-subtitle{0%{letter-spacing:1em;-webkit-transform:translateZ(400px) translateY(-300px);transform:translateZ(400px) translateY(-300px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0) translateY(0);transform:translateZ(0) translateY(0);opacity:1}}@keyframes tracking-in-contract-bck-top{0%{letter-spacing:1em;-webkit-transform:translateZ(400px) translateY(-300px);transform:translateZ(400px) translateY(-300px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0) translateY(0);transform:translateZ(0) translateY(0);opacity:1}}
+@-webkit-keyframes hero-subtitle{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 .get-started {
-  -webkit-animation:slide-in-left .8s cubic-bezier(.68,-.55,.265,1.55) both;animation:slide-in-left .8s cubic-bezier(.68,-.55,.265,1.55) both
+  -webkit-animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) .6s both;animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) .6s both
 }
 @-webkit-keyframes get-started{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 
 .book-demo {
-  -webkit-animation:slide-in-right .8s cubic-bezier(.68,-.55,.265,1.55) both;animation:slide-in-right .8s cubic-bezier(.68,-.55,.265,1.55) both
+  -webkit-animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) .6s both;animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) .6s both
 }
 @-webkit-keyframes book-demo{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 
