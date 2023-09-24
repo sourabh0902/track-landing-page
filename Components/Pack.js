@@ -1,38 +1,8 @@
-import React, { useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React from 'react'
+import { Divider } from 'antd';
 
-function formatNumber(value, decimals) {
-    let s = (+value).toLocaleString('en-US').split('.');
-    return decimals ? s[0] + '.' + ((s[1] || '') + '00000000').substr(0, decimals) : s[0];
-  }
 
 const Pack = () => {
-
-    useEffect(() => {
-        // Register the ScrollTrigger plugin.
-        gsap.registerPlugin(ScrollTrigger); 
-
-        const animCounter = document.querySelector('.animCounter');
-
-            // Animate the counter using GSAP.
-        gsap.from(animCounter, {
-            textContent: parseFloat(animCounter.textContent),
-            duration: 1,
-            ease: 'power1.inOut',
-            modifiers: {
-            textContent: (value) => formatNumber(value, 0) + '+',
-            },
-            scrollTrigger: {
-            trigger: '.animCounter',
-            start: '100px 80%',
-            end: '100%',
-            toggleActions: 'play none none reverse',
-            markers: false,
-            },
-        });
-        }, []);
-
   return (
     <div>
         <div>
