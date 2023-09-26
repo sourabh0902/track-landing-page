@@ -3,8 +3,19 @@ import React from 'react'
 import left from '../public/LeftImg.jpg'
 import right from '../public/RightImg.jpg'
 import stars from '../public/Stars.jpg'
+import Typewriter from "typewriter-effect";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'
+
 
 const Testimonials = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
+
   return (
     <div>
         <div className=' flex justify-center items-center'>
@@ -22,12 +33,27 @@ const Testimonials = () => {
 
         <div className=' flex w-full justify-center items-center mb-60 gap-11'>
 
-            <div className='w-[655px] flex'>
-                <Image src={left} width={250} height={250} alt='/' className=' rounded-lg mr-10'/> 
+            <div className= 'w-[655px] flex' data-aos='flip-left' data-aos-anchor-placement='bottom-bottom' data-aos-duration='800' data-aos-once='true'>
+                <Image src={left} width={250} height={250} alt='/' className=' rounded-lg mr-10 imageShadow'/> 
             <div className=' inline'>
                 <Image src={stars} width={100} height={5} alt='/' className=' h-[18px] w-[121px] mt-4'/>
                 <h2 className=' mt-[30px] text-lg font-medium'>
-                Track has simplified all <br/> my tasks.Managing my work has become <br/> easier.”
+
+                <Typewriter
+                options={{
+                    loop: true,
+                    delay:20,
+                    deleteSpeed:10,
+                }}
+                onInit={ (typewriter) => {
+                    typewriter
+                    .typeString("Track has simplified all <br/> my tasks.Managing my work has become <br/> easier.”")
+                    .changeDelay(1)
+                    .pauseFor(5000)
+                    .start();
+                }}
+                />
+
                 </h2> 
                 <div className=' flex mt-[48px]'>
                     <h2 className=' text-base font-semibold mr-5'>Jenny Wilson</h2>
@@ -36,12 +62,27 @@ const Testimonials = () => {
             </div>
             </div>
 
-            <div className='w-[655px] flex'>
+            <div className='w-[655px] flex' data-aos='flip-left' data-aos-anchor-placement='bottom-bottom' data-aos-duration='800' data-aos-delay='200' data-aos-once='true' >
                 <Image src={right} width={250} height={250} alt='/' className=' rounded-lg mr-10'/> 
             <div className=' inline'>
                 <Image src={stars} width={100} height={5} alt='/' className=' h-[18px] w-[121px] mt-4'/>
                 <h2 className=' mt-[30px] text-lg font-medium'>
-                No more switching between taks. Time <br/> management has become efficient for <br/> my team
+
+                <Typewriter
+                options={{
+                    loop: true,
+                    delay:20,
+                    deleteSpeed:10,
+                }}
+                onInit={ (typewriter) => {
+                    typewriter
+                    .typeString("No more switching between taks. Time <br/> management has become efficient for <br/> my team")
+                    .changeDelay(1)
+                    .pauseFor(5000)
+                    .start();
+                }}
+                />
+
                 </h2> 
                 <div className=' flex mt-[48px]'>
                     <h2 className=' text-base font-semibold mr-5'>Devon Lane</h2>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
-
+import { Slide } from 'react-awesome-reveal';
 
 const Pack = () => {
 
@@ -13,7 +13,9 @@ const [counterOn, setCounterOn] = useState(false);
             <div className='  w-full h-full flex p-[72px] gap-24 justify-start items-start '>
                 <div className=' w-[36%] '>
                     <h1 className=' text-[42px] font-semibold'>
+                    <Slide triggerOnce='true'>
                         It's free, it's easy and it's fun to use for your first project.
+                    </Slide>
                     </h1>
                 </div>
 

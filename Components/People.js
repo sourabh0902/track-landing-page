@@ -7,6 +7,7 @@ import leftfirst from '../public/LeftFirst.png'
 import rightfirst from '../public/RightFirst.png'
 import leftmost from '../public/leftmost.png'
 import rightmost from '../public/RightMost.png'
+import { Bounce } from "react-awesome-reveal";
 
 
 const CustomTooltip = ({ className, children, ...restProps }) => (
@@ -34,7 +35,7 @@ const People = () => {
   return (
     <div>
       <div className=' inline-block justify-center items-center text-center w-full mb-40 mt-16'>
-        <h2 className=' text-2xl font-normal'>
+        <h2 className=' text-2xl font-normal' data-aos='zoom-in-up' data-aos-anchor-placement='top' data-aos-once='true'>
           Your favorite project management team now flexible enough to take on any <br/> project. Work how you want and where you want.
         </h2>
       </div>

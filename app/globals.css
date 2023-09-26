@@ -14,6 +14,15 @@ html,body {
   height: 100%;
 }
 
+/* Hero Elements */
+.yellowcircle {
+  position: relative  ;
+  z-index: 99;
+  margin-top: 485%;
+  left: 207%;
+}
+
+
 /* Navbar Elements */
 .track {
   -webkit-animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) both;animation:slide-in-top .5s cubic-bezier(.075,.82,.165,1.000) both
@@ -154,6 +163,7 @@ html,body {
 
 .circle:hover {
   background-color: #FDBA74;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .person {
@@ -169,10 +179,12 @@ html,body {
   -o-transform: translate(-50%, -50%);
 }
 
+
+
 .leftmost {
   position: absolute;
   right: 73%;
-  border: 12px solid white;  
+  border: 12px solid white;
 }
 
 .leftfirst {
@@ -209,6 +221,8 @@ html,body {
   z-index: 9;
 }
 
+/* Testimonials */
+
 .waivy {
   position: relative;
 }
@@ -226,3 +240,79 @@ html,body {
     transform: rotateY(360deg);
   }
 }
+
+.imageShadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+/* Footer */
+.twitter-container {
+  position: relative;
+  display: inline-block;
+}
+.twitter-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Initially, hide the hover image */
+  transition: opacity 0.3s; /* Add a smooth transition for the hover effect */
+}
+.twitter-container:hover .twitter-image {
+  opacity: 0; /* Hide the normal image on hover */
+}
+.twitter-container:hover .twitter-hover {
+  opacity: 1;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.facebook-container {
+  position: relative;
+  display: inline-block;
+}
+
+.facebook-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Initially, hide the hover image */
+  transition: opacity 0.3s; /* Add a smooth transition for the hover effect */
+}
+
+.facebook-container:hover .facebook-image {
+  opacity: 0; /* Hide the normal image on hover */
+}
+
+.facebook-container:hover .facebook-hover {
+  opacity: 1;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.instagram-container {
+  position: relative;
+  display: inline-block;
+}
+.instagram-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.instagram-container:hover .instagram-image {
+  opacity: 0; /* Hide the normal image on hover */
+}
+
+.instagram-container:hover .instagram-hover {
+  opacity: 1;
+}
+
+

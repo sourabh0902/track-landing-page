@@ -28,7 +28,7 @@ const Navbar = () => {
           scrub: true,
           onUpdate: (self) => {
             if (self.progress >= 0.1) {
-                gsap.to(navbar.querySelectorAll('h4, ul'), {
+                gsap.to(navbar.querySelectorAll('.track, .ftp, .signin'), {
                     color: '#fff',
                     duration: 0.5,
                 });
@@ -47,18 +47,18 @@ const Navbar = () => {
   return (
     <div ref={navbarRef} className='  navbar fixed left-0 top-0 w-full z-10 ease-in duration-300'>
         <div className=' w-full m-auto flex justify-between items-center p-4 text-black pr-[72px] pl-[72px]'>
-            <Link href="/" className=' track flex gap-4'>
+            <Link href="/" className='  flex gap-4'>
             <Image className=' w-8 h-8'
             src={logoImg} 
             alt='/' 
             width={35}
             height={30}
             />
-            <h4 className=' font-bold text-2xl'>
+            <h4 className=' track font-bold text-2xl'>
                 TRACK
             </h4>
             </Link>
-            <ul className=' hidden sm:flex gap-24 ml-[72px]'>
+            <ul className=' hidden sm:flex gap-24 ml-[72px] ftp'>
                 <li className=' features text-base'>
                     <Link href="/">Features</Link>
                 </li>
@@ -71,7 +71,7 @@ const Navbar = () => {
             </ul>
             <ul className=' buttons flex gap-6 justify-center items-center'>
 
-                    <h4>Sign In</h4>
+                    <h4 className='signin'>Sign In</h4>
 
                     <button className='font-medium nav-btn'>Get Started</button>
 

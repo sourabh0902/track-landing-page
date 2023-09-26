@@ -1,19 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
 import background from '@/public/bg.jpg'
+import yellowcircle from '../public/yellow-circle.svg'
+import yellowrectangle from '../public/yellow-rectangle.svg'
+import roundframe from '../public/round-frame.svg'
+import done from '../public/done.svg'
+
 
 const Hero = () => {
   return (
-    <div>
+    <>
         <div className='relative'>
-
-        <Image className=' relative z-[-1] w-full' 
+        <Image className=' relative z-[-1] w-full ' 
         src={background}
         width={500}
         height={500}
         alt='/'
         style={ { objectFit: 'cover'} }
         />
+
 
         <div className=' container'>
             <div className=' hero-title'>
@@ -29,7 +34,7 @@ const Hero = () => {
         </div>
 
         </div>
-    </div>
+    </>
   )
 }
 
