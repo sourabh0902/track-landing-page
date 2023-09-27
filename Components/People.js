@@ -21,7 +21,6 @@ const CustomTooltip = ({ className, children, ...restProps }) => (
 const StyledTooltip = styled(CustomTooltip)`
   .ant-tooltip-arrow {
     margin-bottom: 7px;
-
   }
 
   .ant-tooltip-inner {
