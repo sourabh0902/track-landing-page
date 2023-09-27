@@ -55,7 +55,59 @@ html,body {
   transform: rotate(180deg) scale(1.1);
 }
 
+.left-opening {
+  text-decoration: none;
+  background-image: linear-gradient(#DBF301, #FFE537);
+  background-size: 0 3px, auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+}
+.left-opening:hover {
+  /* The following line makes the underline only as wide as the text */
+  /* background-size: calc(100% - 2em) 5px, auto; */
+  background-size: 100% 3px, auto;
+}
 
+.underline-opening {
+  text-decoration: none;
+  background-image: linear-gradient(#DBF301, #FFE537);
+  background-size: 0 3px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+}
+.underline-opening:hover {
+  /* The following line makes the underline only as wide as the text */
+  /* background-size: calc(100% - 2em) 5px, auto; */
+  background-size: 100% 3px, auto;
+}
+
+.right-opening {
+  text-decoration: none;
+  background-image: linear-gradient(#DBF301, #FFE537);
+  background-size: 0 3px, auto;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+}
+.right-opening:hover {
+  /* The following line makes the underline only as wide as the text */
+  /* background-size: calc(100% - 2em) 5px, auto; */
+  background-size: 100% 3px, auto;
+}
 
 .signin {
   transition: all 0.1s linear;
