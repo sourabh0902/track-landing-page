@@ -1,11 +1,12 @@
 "use client"
 import React from 'react'
+import {useRef} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 
 //Import Images
-import airbnb from '../public/Airbnb.jpg'
+import airbnb from '../public/Airbnb.svg'
 import barclays from '../public/Barclays.jpg'
 import gumroad from '../public/Gumroad.jpg'
 import toyota from '../public/Toyota.jpg'
@@ -19,18 +20,33 @@ import Image from 'next/image';
 
 
 const Slider = () => {
+
+  const swiperRefLocal = useRef()
+
+  const handleMouseEnter = () => {
+      swiperRefLocal?.current?.swiper?.autoplay?.stop()
+  };
+
+  const handleMouseLeave = () => {
+      swiperRefLocal?.current?.swiper?.autoplay?.start()
+  };
+
   return (
-    <div className=' py-40 flex justify-center items-center relative bg-white mt-[-25%]'>
+    <div className=' py-40 flex justify-center items-center relative bg-white mt-[-25%]' 
+    onMouseEnter={handleMouseEnter} 
+    onMouseLeave={handleMouseLeave}
+    >
     <Swiper className=' scroller'
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, Autoplay]}
       spaceBetween={50}
+      ref={swiperRefLocal}
       slidesPerView={4}
       loop={true}
-      speed={1200}
+      speed={800}
       autoplay={{
           delay: false,
-          pauseOnMouseEnter: false,
+          pauseOnMouseEnter: true,
           disableOnInteraction: false,
         }}
     //   navigation={true}
@@ -39,7 +55,7 @@ const Slider = () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-      <SwiperSlide>
+      <SwiperSlide className=' slider-image'>
         <svg
         width={67}
         height={67}
@@ -68,7 +84,7 @@ const Slider = () => {
         </svg>
       </SwiperSlide>
 
-      <SwiperSlide className=' flex items-center justify-center p-3'>
+      <SwiperSlide className=' flex items-center justify-center p-3 slider-image'>
       <svg
         width={171}
         height={48}
@@ -91,7 +107,7 @@ const Slider = () => {
 
       </SwiperSlide>
 
-      <SwiperSlide className=' flex justify-center items-center p-5'>
+      <SwiperSlide className=' flex justify-center items-center p-5 slider-image'>
       <svg
         width={172}
         height={29}
@@ -116,18 +132,18 @@ const Slider = () => {
 
       </SwiperSlide>
 
-      <SwiperSlide>
+      <SwiperSlide className='slider-image'>
         <Image
         src={airbnb}
-        width={72}
-        height={5}
+        width={62}
+        height={2}
         alt='/'
         className=' airbnb'
         style={ { height: 'auto'} }
         />
       </SwiperSlide>
 
-      <SwiperSlide>
+      <SwiperSlide className='slider-image'>
         <svg
         width={67}
         height={67}
@@ -156,7 +172,7 @@ const Slider = () => {
         </svg>
       </SwiperSlide>
 
-      <SwiperSlide className=' flex items-center justify-center p-3'>
+      <SwiperSlide className=' flex items-center justify-center p-3 slider-image'>
       <svg
         width={171}
         height={48}
@@ -179,7 +195,7 @@ const Slider = () => {
 
       </SwiperSlide>
 
-      <SwiperSlide className=' flex justify-center items-center p-5'>
+      <SwiperSlide className=' flex justify-center items-center p-5 slider-image'>
       <svg
         width={172}
         height={29}
@@ -204,7 +220,7 @@ const Slider = () => {
 
       </SwiperSlide>
 
-      <SwiperSlide>
+      <SwiperSlide className='slider-image'>
         <Image
         src={airbnb}
         width={72}
@@ -220,4 +236,4 @@ const Slider = () => {
     )
 }
 
-export default Slider
+export default Slider 

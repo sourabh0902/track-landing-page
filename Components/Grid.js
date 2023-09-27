@@ -42,7 +42,7 @@ const Grid = () => {
                 </h2>
             </div>
 
-            <div className=' border-b-2 pl-[45px] pr-[45px] pb-[85px]  border-r-2' data-aos='zoom-in' data-aos-easing='linear' data-aos-delay={50}>
+            <div className=' border-b-2 pl-[45px] pr-[45px] pb-[85px]  border-r-2' data-aos='zoom-in' data-aos-delay={50}>
             <Image data-aos='fade-down' data-aos-anchor-placement='top'
             src={chart}
             width={44}

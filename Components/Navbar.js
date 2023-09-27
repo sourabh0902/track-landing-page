@@ -33,7 +33,7 @@ const Navbar = () => {
                     duration: 0.5,
                 });
                 } else {
-                gsap.to(navbar.querySelectorAll('h4, ul'), {
+                gsap.to(navbar.querySelectorAll('.track, .ftp, .signin'), {
                     color: '#000',
                     duration: 0.5,
                 });
@@ -45,16 +45,16 @@ const Navbar = () => {
 
 
   return (
-    <div ref={navbarRef} className='  navbar fixed left-0 top-0 w-full z-10 ease-in duration-300'>
+    <div ref={navbarRef} className='navbar fixed left-0 top-0 w-full z-10 ease-in duration-300'>
         <div className=' w-full m-auto flex justify-between items-center p-4 text-black pr-[72px] pl-[72px]'>
-            <Link href="/" className='  flex gap-4'>
-            <Image className=' w-8 h-8'
+            <Link href="/" className=' flex gap-4 track'>
+            <Image className='logo w-8 h-8'
             src={logoImg} 
             alt='/' 
             width={35}
             height={30}
             />
-            <h4 className=' track font-bold text-2xl'>
+            <h4 className='  font-bold text-2xl'>
                 TRACK
             </h4>
             </Link>
@@ -69,9 +69,9 @@ const Navbar = () => {
                     <Link href="/">Pricing</Link>
                 </li>
             </ul>
-            <ul className=' buttons flex gap-6 justify-center items-center'>
+            <ul className=' buttons flex  justify-center items-center'>
 
-                    <h4 className='signin'>Sign In</h4>
+                    <button className='signin border-[#DBF301] px-6 py-3 rounded-xl'>Sign In</button>
 
                     <button className='font-medium nav-btn'>Get Started</button>
 

@@ -10,7 +10,7 @@ import done from '../public/done.svg'
 const Hero = () => {
   return (
     <>
-        <div className='relative'>
+         <div className='relative'>
         <Image className=' relative z-[-1] w-full ' 
         src={background}
         width={500}
@@ -20,7 +20,7 @@ const Hero = () => {
         />
 
 
-        <div className=' container'>
+        <div className=' absolute container'>
             <div className=' hero-title'>
                 <h1 className='text-black text-6xl font-bold text-center'>Manage your projects and<br/>collaborate with teams</h1>
             </div>
@@ -33,7 +33,45 @@ const Hero = () => {
             </div>
         </div>
 
+        <div className='yellowcircle absolute top-0'>
+            <Image
+            src={yellowcircle}
+            width={50}
+            height={50}
+            alt='/'
+            />
         </div>
+
+        <div className='roundframe absolute top-0 '>
+            <Image
+            src={roundframe}
+            width={80}
+            height={80}
+            alt='/'
+            style={ {  width: '7vw'} }
+            />
+        </div>
+
+        <div className='yellowrectangle absolute top-0 '>
+            <Image
+            src={yellowrectangle}
+            width={50}
+            height={50}
+            alt='/'
+            />
+        </div>
+
+        <div className='done absolute top-0 '>
+            <Image
+            src={done}
+            width={70}
+            height={70}
+            alt='/'
+            style={ {  width: '5.5vw'} }
+            />
+        </div>
+
+        </div> 
     </>
   )
 }
