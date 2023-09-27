@@ -9,12 +9,12 @@ import Slider from '@/Components/Slider'
 const page = () => {
   return (    
     <div>
-      <Hero />
+      {/* <Hero />
       <Slider />
       <Grid />
       <People />
       <Testimonials />
-      <Pack />
+      <Pack /> */}
     </div>
   )
 }
