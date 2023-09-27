@@ -13,17 +13,14 @@ import 'aos/dist/aos.css';
 
 
 const CustomTooltip = ({ className, children, ...restProps }) => (
-  <Tooltip overlayStyle={{ lineBreak: 'anywhere' }} overlayClassName={className} {...restProps}>
+  <Tooltip overlayClassName={className} {...restProps}>
     {children}
   </Tooltip>
 );
 
 const StyledTooltip = styled(CustomTooltip)`
   .ant-tooltip-arrow {
-    margin-bottom: 7px;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(0deg);
-    -moz-transform: scaleY(1);
+    margin-bottom: 17px;
   }
 
   .ant-tooltip-inner {
@@ -32,7 +29,7 @@ const StyledTooltip = styled(CustomTooltip)`
     transform: rotate(3deg);
     -webkit-transform: rotate(3deg);
     -moz-transform: rotate(3deg);
-    margin-bottom: 7px;
+    margin-bottom: 17px;
   }
 `
 
@@ -166,7 +163,7 @@ const People = () => {
               width={250}
               height={301}
               alt='/'
-              style={ {top: '60%'} }
+              style={ {top: '61%'} }
               />
             </div>
         </StyledTooltip>

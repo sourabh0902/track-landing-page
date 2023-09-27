@@ -14,12 +14,12 @@ import instagramHover from '../public/instagram-hover.svg'
 
 const Footer = () => {
   return (
-    <div>
-        <div className=' bg-[#110D33] py-20 px-28 '>
-            <div className='  flex justify-between items-center text-white'>
+    <>
+        <div className='footer bg-[#110D33] py-20 px-28 '>
+            <div className='flex justify-between items-center text-white'>
                 
                 <div className=' flex gap-4 pl-5'>
-                <Image
+                <Image className='logo'
                 src={logo}
                 width={30}
                 height={30}
@@ -111,7 +111,7 @@ const Footer = () => {
                 </h2>
             </div>
         </div>
-    </div>
+    </>
   )
 }
 

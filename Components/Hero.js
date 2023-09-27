@@ -28,7 +28,7 @@ const Hero = () => {
                 <h3 className=' text-black text-2xl font-medium py-[36px] text-center'>A tool for visualising , organising and tracking all the work you do</h3>
             </div>
             <div className=' flex justify-center items-center gap-3'>
-                <button className='get-started text-base font-semibold bg-[#DBF301] px-6 py-3 rounded-xl'>Get Started</button>
+                <button className='btn-hover get-started text-base font-semibold bg-[#DBF301] px-6 py-3 rounded-xl'>Get Started</button>
                 <button className='book-demo border-[#DBF301] border text-base font-semibold px-6 py-3 rounded-xl'>Book Demo</button>
             </div>
         </div>

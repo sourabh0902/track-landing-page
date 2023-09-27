@@ -4,6 +4,7 @@ import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Divider } from "antd";
 
 const Pack = () => {
   const [counterOn, setCounterOn] = useState(false);
@@ -39,9 +40,9 @@ const Pack = () => {
                       <CountUp start={0} end={20} duration={2} delay={0} />
                     )}
                   </h1>
-                  <p>/Month</p>
+                  <p>/Month</p>                  
                 </div>
-
+                                    
                 <div className=" flex flex-col justify-center items-center gap-4 mb-[37px]">
                   <p className=" font-normal text-base">5 team members</p>
                   <p className=" font-normal text-base">file sharing</p>
@@ -50,7 +51,7 @@ const Pack = () => {
                   </p>
                 </div>
                 <div className=" flex justify-center items-center">
-                  <button className=" px-12 py-4 bg-[white] text-base font-semibold rounded-lg text-[#485AFF]">
+                  <button className="prempack px-12 py-4 bg-[white] text-base font-semibold rounded-lg text-[#485AFF]">
                     $20/ Month
                   </button>
                 </div>
@@ -82,7 +83,7 @@ const Pack = () => {
                   <p className=" font-normal text-base">100 Mb Storage</p>
                 </div>
                 <div className=" flex justify-center items-center">
-                  <button className=" px-12 py-4 bg-[#485AFF] text-base font-semibold rounded-lg text-white">
+                  <button className="btn-hover tryfree px-12 py-4 bg-[#485AFF] text-base font-semibold rounded-lg text-white">
                     Try for Free
                   </button>
                 </div>

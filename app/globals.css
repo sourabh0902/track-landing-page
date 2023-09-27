@@ -51,6 +51,11 @@ html,body {
 .track:hover .logo {
   transform: rotate(180deg) scale(1.1);
 }
+.navbar:hover .logo {
+  transform: rotate(180deg) scale(1.1);
+}
+
+
 
 .signin {
   transition: all 0.1s linear;
@@ -59,6 +64,7 @@ html,body {
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
 }
+
 .signin:hover {
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
@@ -125,10 +131,9 @@ html,body {
   -o-transition: all 0.1s linear;
 }
 @-webkit-keyframes get-started{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
-.get-started:hover{
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+.btn-hover.get-started {
+  background-image: linear-gradient(to right, #DBF301, #E7FA36, #FFE537, #FFEB62);
 }
-
 
 .book-demo {
   -webkit-animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) .6s both;
@@ -166,7 +171,9 @@ html,body {
   -o-transition: all 0.1s linear;
 }
 .nav-btn:hover {
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.btn-hover.nav-btn {  
+  background-image: linear-gradient(to right, #DBF301, #E7FA36, #FFE537, #FFEB62);
 }
 
 .container {
@@ -230,8 +237,8 @@ html,body {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  filter: grayscale(90%);
-  -webkit-filter: grayscale(90%);
+  filter: grayscale(95%);
+  -webkit-filter: grayscale(95%);
   cursor: pointer;
 }
 .slider-image:hover {
@@ -344,8 +351,46 @@ html,body {
   }
 }
 
+/* Pack */
+.btn-hover {
+  border: none;
+  background-size: 300% 100%;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn-hover:focus {
+  outline: none;
+}
+.btn-hover.tryfree {
+  background-image: linear-gradient(to right, #485AFF, #485AFF, #04befe, #3f86ed);
+}
+.prempack {
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+
+}
+.prempack:hover {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
 
 /* Footer */
+.footer:hover .logo {
+  transform: rotate(180deg) scale(1.1);
+}
+
 .twitter-container {
   position: relative;
   display: inline-block;

@@ -63,7 +63,7 @@ const Navbar = () => {
                     <Link href="/">Features</Link>
                 </li>
                 <li className=' team text-base'>
-                    <Link href="/">Our Team</Link>
+                    <Link href="/" className='underline-opening'>Our Team</Link>
                 </li>
                 <li className=' pricing text-base'>
                     <Link href="/">Pricing</Link>
@@ -73,7 +73,7 @@ const Navbar = () => {
 
                     <button className='signin border-[#DBF301] px-6 py-3 rounded-xl'>Sign In</button>
 
-                    <button className='font-medium nav-btn'>Get Started</button>
+                    <button className='btn-hover font-medium nav-btn'>Get Started</button>
 
             </ul>
             </div>
