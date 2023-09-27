@@ -10,11 +10,11 @@ const page = () => {
   return (    
     <div>
       <Hero />
-      {/* <Slider />
+      <Slider />
       <Grid />
       <People />
       <Testimonials />
-      <Pack /> */}
+      <Pack />
     </div>
   )
 }

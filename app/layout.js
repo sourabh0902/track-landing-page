@@ -1,6 +1,5 @@
-import Navbar from '@/Components/Navbar'
 import './globals.css'
-import 'tailwindcss/tailwind.css'
+import Navbar from '@/Components/Navbar'
 import Footer from '@/Components/Footer'
 
 export const metadata = {
@@ -12,9 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <Navbar />
+      {/* <Navbar /> */}
         {children}
-      <Footer />  
+      {/* <Footer />   */}
       </body>
     </html>
   )
