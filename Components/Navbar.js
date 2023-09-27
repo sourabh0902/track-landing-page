@@ -58,7 +58,7 @@ const Navbar = () => {
                 TRACK
             </h4>
             </Link>
-            <ul className=' hidden sm:flex gap-24 ml-[72px] ftp'>
+            <ul className=' flex gap-24 ml-[72px] ftp'>
                 <li className=' features text-base'>
                     <Link href="/">Features</Link>
                 </li>
