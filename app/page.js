@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import Hero from '@/Components/Hero'
 import Grid from '@/Components/Grid'
