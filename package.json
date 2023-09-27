@@ -25,6 +25,7 @@
     "react-scroll-trigger": "^0.6.14",
     "react-typewriter-effect": "^1.1.0",
     "sass": "^1.68.0",
+    "sharp": "^0.32.6",
     "styled-components": "^6.0.8",
     "swiper": "^10.3.0",
     "tailwindcss": "3.3.3",
