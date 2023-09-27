@@ -21,12 +21,17 @@ const CustomTooltip = ({ className, children, ...restProps }) => (
 const StyledTooltip = styled(CustomTooltip)`
   .ant-tooltip-arrow {
     margin-bottom: 7px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(0deg);
+    -moz-transform: scaleY(1);
   }
 
   .ant-tooltip-inner {
     color: black;
     border-radius: 20px;
     transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
     margin-bottom: 7px;
   }
 `
@@ -58,7 +63,8 @@ const People = () => {
             <p className=' text-sm font-normal text-[#71717A]'>Co-Founder, CEO</p>
           </div>
         </>        
-        }        
+        }
+        style={ {} }        
         >
             <div className='circle leftmost' data-aos='bounce' data-aos-anchor-placement='top-center'>
               <Image 
