@@ -1,5 +1,6 @@
 import Navbar from '@/Components/Navbar'
 import './globals.css'
+import 'tailwindcss/tailwind.css'
 import Footer from '@/Components/Footer'
 
 export const metadata = {
