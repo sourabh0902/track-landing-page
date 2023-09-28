@@ -60,13 +60,13 @@ const Navbar = () => {
             </Link>
             <ul className=' flex gap-24 ml-[72px] ftp'>
                 <li className=' features text-base'>
-                    <Link href="/" className='left-opening'>Features</Link>
+                    <Link href="/" className='right-opening'>Features</Link>
                 </li>
                 <li className=' team text-base'>
                     <Link href="/" className='underline-opening'>Our Team</Link>
                 </li>
                 <li className=' pricing text-base'>
-                    <Link href="/" className='right-opening'>Pricing</Link>
+                    <Link href="/" className=' left-opening'>Pricing</Link>
                 </li>
             </ul>
             <ul className=' buttons flex  justify-center items-center'>
