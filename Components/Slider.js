@@ -62,6 +62,7 @@ const Slider = () => {
             height={2}
             alt="/"
             style={{ width: "70px", height: "70px", overflow: "visible" }}
+            className=" hover-stop"
           />
         </SwiperSlide>
 
@@ -72,6 +73,7 @@ const Slider = () => {
             viewBox="0 0 171 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className=" hover-stop"
           >
             <g style={{ mixBlendMode: "luminosity" }}>
               <path
@@ -94,6 +96,7 @@ const Slider = () => {
             viewBox="0 0 172 29"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className=" hover-stop"
           >
             <g
               style={{ mixBlendMode: "luminosity" }}
@@ -120,7 +123,7 @@ const Slider = () => {
             width={62}
             height={2}
             alt="/"
-            className=" airbnb"
+            className="hover-stop airbnb"
             style={{ height: "auto" }}
           />
         </SwiperSlide>
@@ -132,6 +135,7 @@ const Slider = () => {
             height={2}
             alt="/"
             style={{ width: "70px", height: "70px", overflow: "visible" }}
+            className="hover-stop"
           />
         </SwiperSlide>
 
@@ -142,6 +146,7 @@ const Slider = () => {
             viewBox="0 0 171 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="hover-stop"
           >
             <g style={{ mixBlendMode: "luminosity" }}>
               <path
@@ -164,6 +169,7 @@ const Slider = () => {
             viewBox="0 0 172 29"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="hover-stop"
           >
             <g
               style={{ mixBlendMode: "luminosity" }}
@@ -190,7 +196,7 @@ const Slider = () => {
             width={72}
             height={5}
             alt="/"
-            className=" airbnb"
+            className="hover-stop airbnb"
             style={{ height: "auto" }}
           />
         </SwiperSlide>

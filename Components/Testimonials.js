@@ -4,6 +4,7 @@ import React from "react";
 import left from "../public/LeftImg.jpg";
 import right from "../public/RightImg.jpg";
 import stars from "../public/Stars.svg";
+import star from "../public/Star.svg";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -30,9 +31,9 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className=" flex w-full justify-center items-center mb-60 gap-11">
+      <div className=" flex w-full justify-center items-center mb-60 gap-11 ">
         <div
-          className="w-[655px] flex"
+          className="w-[655px] flex testimonial-container-left"
           data-aos="flip-left"
           data-aos-anchor-placement="bottom-bottom"
           data-aos-duration="800"
@@ -46,14 +47,25 @@ const Testimonials = () => {
             className="testimonial-left rounded-lg mr-10 imageShadow"
           />
           <div className=" inline">
-            <Image
-              src={stars}
-              width={100}
-              height={5}
-              alt="/"
-              className=" h-[18px] w-[121px] mt-4"
-            />
-            <h2 className=" mt-[30px] text-lg font-medium">
+
+            <div className="stars-container gap-1">
+              <div className="star h-[18px] mt-4 ">
+                <Image src={star} width={20} height={20} alt="/" />
+              </div>
+              <div className="star h-[18px] mt-4">
+                <Image src={star} width={20} height={20} alt="/" />
+              </div>
+              <div className="star h-[18px] mt-4">
+                <Image src={star} width={20} height={20} alt="/" />
+              </div>
+              <div className="star h-[18px] mt-4">
+                <Image src={star} width={20} height={20} alt="/" />
+              </div>
+              <div className="star h-[18px] mt-4">
+                <Image src={star} width={20} height={20} alt="/" />
+              </div>
+            </div>
+            <h2 className=" mt-[30px] text-lg font-medium typewriter">
               <Typewriter
                 options={{
                   loop: true,
@@ -81,7 +93,7 @@ const Testimonials = () => {
         </div>
 
         <div
-          className="w-[655px] flex"
+          className="w-[655px] flex testimonial-container-right"
           data-aos="flip-left"
           data-aos-anchor-placement="bottom-bottom"
           data-aos-duration="800"
@@ -96,13 +108,23 @@ const Testimonials = () => {
             className="testimonial-right rounded-lg mr-10"
           />
           <div className=" inline">
-            <Image
-              src={stars}
-              width={100}
-              height={5}
-              alt="/"
-              className=" h-[18px] w-[121px] mt-4"
-            />
+          <div className="stars-container gap-1">
+              <div className="star h-[18px] mt-4 ">
+                <Image src={star} width={20} height={20} alt="/" />
+              </div>
+              <div className="star h-[18px] mt-4">
+                <Image src={star} width={20} height={20} alt="/" />
+              </div>
+              <div className="star h-[18px] mt-4">
+                <Image src={star} width={20} height={20} alt="/" />
+              </div>
+              <div className="star h-[18px] mt-4">
+                <Image src={star} width={20} height={20} alt="/" />
+              </div>
+              <div className="star h-[18px] mt-4">
+                <Image src={star} width={20} height={20} alt="/" />
+              </div>
+            </div>
             <h2 className=" mt-[30px] text-lg font-medium">
               <Typewriter
                 options={{

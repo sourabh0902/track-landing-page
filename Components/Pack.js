@@ -51,7 +51,7 @@ const Pack = () => {
                   </p>
                 </div>
                 <div className=" flex justify-center items-center">
-                  <button className="prempack px-12 py-4 bg-[white] text-base font-semibold rounded-lg text-[#485AFF]">
+                  <button className="btn-hover prempack px-12 py-4 bg-[white] text-base font-semibold rounded-lg text-[#485AFF]">
                     $20/ Month
                   </button>
                 </div>

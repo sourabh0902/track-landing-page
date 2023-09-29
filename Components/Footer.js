@@ -25,23 +25,24 @@ const Footer = () => {
                 height={30}
                 alt='/'
                 />
-                <h1 className=' text-base font-bold'>
+                <h1 className=' text-xl font-bold'>
                     TRACK
                 </h1>
                 </div>
 
-                <div className=' flex justify-between items-center w-[30%] text-base font-medium'>
-                    <h2>
+                <div className=' flex justify-between items-center w-[30%] text-base font-medium cursor-pointer'>
+                    <h2 className='right-opening'>
                         Features
                     </h2>
-                    <h2>
+                    <h2 className='underline-opening'>
                         Our Team
-                    </h2><h2>
+                    </h2>
+                    <h2 className='left-opening'>
                         Pricing
                     </h2>
                 </div>
 
-                <div className=' flex justify-center items-center pr-5 gap-3'>
+                <div className=' flex justify-center items-center pr-5 gap-3 cursor-pointer '>
 
                 <div className='twitter-container'>
                 <div className='twitter'>
