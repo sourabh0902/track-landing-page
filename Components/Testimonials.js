@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import left from "../public/LeftImg.svg";
-import right from "../public/RightImg.svg";
+import left from "../public/LeftImg.jpg";
+import right from "../public/RightImg.jpg";
 import stars from "../public/Stars.svg";
 import star from "../public/Star.svg";
 import Typewriter from "typewriter-effect";
