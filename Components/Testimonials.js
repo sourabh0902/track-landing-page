@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import left from "../public/LeftImg.jpg";
-import right from "../public/RightImg.jpg";
+import left from "../public/LeftImg.svg";
+import right from "../public/RightImg.svg";
 import stars from "../public/Stars.svg";
 import star from "../public/Star.svg";
 import Typewriter from "typewriter-effect";
@@ -93,7 +93,7 @@ const Testimonials = () => {
         </div>
 
         <div
-          className="w-[655px] flex testimonial-container-right"
+          className="w-[655px] flex testimonial-container-left"
           data-aos="flip-left"
           data-aos-anchor-placement="bottom-bottom"
           data-aos-duration="800"

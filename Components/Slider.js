@@ -43,7 +43,7 @@ const Slider = () => {
         ref={swiperRefLocal}
         slidesPerView={4}
         loop={true}
-        speed={800}
+        speed={1500}
         autoplay={{
             delay: false,
             pauseOnMouseEnter: true,

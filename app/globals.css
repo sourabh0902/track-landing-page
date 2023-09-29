@@ -1002,7 +1002,6 @@ body {
 }
 
 @keyframes flip {
-
   0%,
   60% {
     transform: rotateY(360deg);
@@ -1015,55 +1014,54 @@ body {
   justify-content: start;
   cursor: pointer;
 }
+
 .star {
-  transition: transform 0.5s ease, margin 0.5s ease;
+  transition: transform 0.5s ease-in-out, margin 0.5s ease-in-out;
 }
+
 .testimonial-container-left:hover .star,
 .testimonial-container-right:hover .star {
-  animation: translateStar 0.5s ease forwards, scaleUp 0.5s ease forwards;
+  animation: translateStar 0.5s ease-in-out forwards;
   margin-right: 5px;
-} 
+}
 
-.testimonial-container-left:hover .star:nth-child(1), 
+.testimonial-container-left:hover .star:nth-child(1),
 .testimonial-container-right:hover .star:nth-child(1) {
-  animation: translateStar 0.5s ease 0.1s forwards;
+  animation: translateStar 0.25s ease-in-out 0.1s forwards;
 }
 
-.testimonial-container-left:hover .star:nth-child(2), 
+.testimonial-container-left:hover .star:nth-child(2),
 .testimonial-container-right:hover .star:nth-child(2) {
-  animation: translateStar 0.5s ease 0.2s forwards;
+  animation: translateStar 0.25s ease-in-out 0.2s forwards;
 }
 
-.testimonial-container-left:hover .star:nth-child(3), 
+.testimonial-container-left:hover .star:nth-child(3),
 .testimonial-container-right:hover .star:nth-child(3) {
-  animation: translateStar 0.5s ease 0.3s forwards;
+  animation: translateStar 0.25s ease-in-out 0.3s forwards;
 }
 
-.testimonial-container-left:hover .star:nth-child(4), 
+.testimonial-container-left:hover .star:nth-child(4),
 .testimonial-container-right:hover .star:nth-child(4) {
-  animation: translateStar 0.5s ease 0.4s forwards;
+  animation: translateStar 0.25s ease-in-out 0.4s forwards;
 }
 
-.testimonial-container-left:hover .star:nth-child(5), 
+.testimonial-container-left:hover .star:nth-child(5),
 .testimonial-container-right:hover .star:nth-child(5) {
-  animation: translateStar 0.5s ease 0.5s forwards;
+  animation: translateStar 0.25s ease-in-out 0.5s forwards;
 }
+
 @keyframes translateStar {
   0% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
+
   100% {
-      transform: translateY(-50%);
-  }
-}  
-@keyframes scaleUp {
-  0% {
-      transform: scale(1);
-  }
-  100% {
-      transform: scale(1.1);
+    transform: translateY(-50%);
   }
 }
+
+
+
 
 
 /* Pack */
@@ -1089,6 +1087,7 @@ body {
 .btn-hover.prempack {
   background-image: linear-gradient(to right, #FFFF, #FFFF, #F4F4F4, #F8F8F8);
 }
+
 .prempack:hover {
   color: black;
 }

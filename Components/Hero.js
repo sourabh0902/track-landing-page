@@ -10,15 +10,14 @@ const Hero = () => {
   return (
     <>
       <div className="relative">
-
         <div className="relative z-[-1] w-full h-auto">
-          <svg 
+          <svg
             width="100%"
             height="100%"
             viewBox="0 0 1440 1265"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            style={ {objectFit: 'cover'} }
+            style={{ objectFit: "cover" }}
           >
             <circle
               cx="720"

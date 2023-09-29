@@ -69,7 +69,7 @@ const Grid = () => {
                     Interface
                 </h1>
                 <h2 className=' text-base p-2' data-aos='fade-down' data-aos-anchor-placement='top' data-aos-delay={200}>
-                    Auto backup,smooth interface ensures you complete your scheduled tasks                
+                    Auto backup, smooth interface ensures you complete your scheduled tasks                
                 </h2>
             </div>  
             <div className=' pl-[45px] pr-20 border-r-2 pt-[59px]' data-aos='zoom-in' data-aos-easing='linear' >
